@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Remote Prefabs
+  m_EditorClassIdentifier: 
+  m_GroupName: Remote Prefabs
+  m_Data:
+    m_SerializedData: []
+  m_GUID: fd452cc0bd54df84e9b6a710c9f63a1e
+  m_SerializeEntries:
+  - m_GUID: e741f9307ea581d4a85f582cbe313091
+    m_Address: Assets/Prefabs/Object Twins/F15.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Remote
+    - remote
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e1d770828a6932c4b93aa5f2b1263f48, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 6337ca75c8e9dab458ea297d4655ae55, type: 2}
+    - {fileID: 11400000, guid: 695827385bc51ef47a6e44ee9846eea1, type: 2}

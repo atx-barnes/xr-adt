@@ -11,5 +11,7 @@ EditorBuildSettings:
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: ac9380674cd0fe14aa69c0a48e0560f1,
       type: 2}
+    com.unity.addressableassets: {fileID: 11400000, guid: 473b8333a8236594abe0b0fe5a1962a5,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8165d2f6c82bbc843a5f9a80f45a25e3,
       type: 2}
