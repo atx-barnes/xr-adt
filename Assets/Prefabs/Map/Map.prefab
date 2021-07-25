@@ -77,7 +77,7 @@ MonoBehaviour:
   _center:
     _latitude: 30.078611
     _longitude: -85.576385
-  _zoomLevel: 14
+  _zoomLevel: 14.55
   _minimumZoomLevel: 14
   _maximumZoomLevel: 18
   _mapTerrainType: 0
