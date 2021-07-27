@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: F151
   m_EditorClassIdentifier: 
   aircraftData:
-    <ID>k__BackingField: 0
+    <Id>k__BackingField: F151
     <Pitch>k__BackingField: 0
     <Altitude>k__BackingField: 0
     <Heading>k__BackingField: 0
