@@ -30,11 +30,9 @@ public class ADTDataHandler : MonoBehaviour
         // Finally update Unity GameObjects, but this must be done on the Unity Main thread.
         UnityDispatcher.InvokeOnAppThread(() =>
         {
-            Debug.Log($"Updating Telemetry - Message:{message.Altitude}");
-
             foreach (AircraftScriptableObject aircraft in airbaseData.aircraftData)
             {
-                if (aircraft.aircraftData.ID == message.ID)
+                if (aircraft.aircraftData.Id == message.Id)
                 {
                     aircraft.UpdateData(CreateNewAircraftData(message));
                     return;
@@ -47,7 +45,7 @@ public class ADTDataHandler : MonoBehaviour
     {
         AircraftData data = new AircraftData
         {
-            ID = message.ID,
+            Id = message.Id,
             Pitch = message.Pitch,
             Altitude = message.Altitude,
             Heading = message.Heading,

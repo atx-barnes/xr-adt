@@ -5,13 +5,13 @@ using UnityEngine;
 public class AircraftData
 {
     [field: SerializeField]
-    public int ID { get; set; }
+    public string Id { get; set; }
 
     [field: SerializeField]
     public double Pitch { get; set; }
 
     [field: SerializeField]
-    public int Altitude { get; set; }
+    public double Altitude { get; set; }
 
     [field: SerializeField]
     public double Heading { get; set; }
@@ -23,5 +23,5 @@ public class AircraftData
     public double Latitude { get; set; }
 
     [field: SerializeField]
-    public int Airspeed { get; set; }
+    public double Airspeed { get; set; }
 }
