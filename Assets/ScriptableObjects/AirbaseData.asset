@@ -16,5 +16,5 @@ MonoBehaviour:
   baseLatLon:
     _latitude: 30.078611
     _longitude: -85.576385
-  aircraftData:
+  AircraftData:
   - {fileID: 11400000, guid: 2de2e370b63df3847a4e92b35361ca31, type: 2}

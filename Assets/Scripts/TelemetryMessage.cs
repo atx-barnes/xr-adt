@@ -10,4 +10,5 @@ public class TelemetryMessage
     public double Longitude { get; set; }
     public double Latitude { get; set; }
     public double Airspeed { get; set; }
+    public double Bank { get; set; }
 }

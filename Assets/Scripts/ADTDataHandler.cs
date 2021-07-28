@@ -31,7 +31,7 @@ public class ADTDataHandler : MonoBehaviour
         UnityDispatcher.InvokeOnAppThread(() =>
         {
             Debug.Log($"Telemetry Data Incoming For Twin {message.Id}...");
-            foreach (AircraftScriptableObject aircraft in airbaseData.aircraftData)
+            foreach (AircraftScriptableObject aircraft in airbaseData.AircraftData)
             {
                 if (aircraft.aircraftData.Id == message.Id)
                 {
@@ -52,7 +52,8 @@ public class ADTDataHandler : MonoBehaviour
             Heading = message.Heading,
             Longitude = message.Longitude,
             Latitude = message.Latitude,
-            Airspeed = message.Airspeed
+            Airspeed = message.Airspeed,
+            Bank = message.Bank
         };
 
         return data;

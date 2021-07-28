@@ -12,19 +12,19 @@ public class AirbaseData : ScriptableObject
     [SerializeField]
     private LatLonWrapper baseLatLon;
 
-    public LatLon SiteLocation => baseLatLon.ToLatLon();
+    public LatLon BaseLocation => baseLatLon.ToLatLon();
 
-    public AircraftScriptableObject[] aircraftData;
+    public AircraftScriptableObject[] AircraftData;
 
-    public Dictionary<AircraftScriptableObject, GameObject> windTurbines = new Dictionary<AircraftScriptableObject, GameObject>();
+    public Dictionary<AircraftScriptableObject, GameObject> Aircrafts = new Dictionary<AircraftScriptableObject, GameObject>();
 
     public void AddAircraft(AircraftScriptableObject data, GameObject gameObject)
     {
-        windTurbines.Add(data, gameObject);
+        Aircrafts.Add(data, gameObject);
     }
 
-    public bool TryGetTurbineGameObject(AircraftScriptableObject data, out GameObject aircraftObject)
+    public bool TryGetAircraftGameObject(AircraftScriptableObject data, out GameObject aircraftObject)
     {
-        return windTurbines.TryGetValue(data, out aircraftObject);
+        return Aircrafts.TryGetValue(data, out aircraftObject);
     }
 }

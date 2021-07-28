@@ -24,4 +24,7 @@ public class AircraftData
 
     [field: SerializeField]
     public double Airspeed { get; set; }
+
+    [field: SerializeField]
+    public double Bank { get; set; }
 }
