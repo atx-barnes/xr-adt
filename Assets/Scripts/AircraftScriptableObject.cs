@@ -6,12 +6,12 @@ using UnityEngine;
 public class AircraftScriptableObject : ScriptableObject
 {
     public GameObject AircraftPrefab;
-    public Action onDataUpdated;
-    public AircraftData aircraftData;
-    public LatLon CurrentLocation { get; set; }
-    public void UpdateData(AircraftData newAircraftData)
+    public Action OnDataUpdated;
+    public AircraftData Data;
+
+    public void UpdateData(AircraftData data)
     {
-        aircraftData = newAircraftData;
-        onDataUpdated?.Invoke();
+        Data = data;
+        OnDataUpdated?.Invoke();
     }
 }

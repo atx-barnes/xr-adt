@@ -33,16 +33,16 @@ public class ADTDataHandler : MonoBehaviour
             Debug.Log($"Telemetry Data Incoming For Twin {message.Id}...");
             foreach (AircraftScriptableObject aircraft in airbaseData.AircraftData)
             {
-                if (aircraft.aircraftData.Id == message.Id)
+                if (aircraft.Data.Id == message.Id)
                 {
-                    aircraft.UpdateData(CreateNewAircraftData(message));
+                    aircraft.UpdateData(NewAircraftData(message));
                     return;
                 }
             }
         });
     }
 
-    private AircraftData CreateNewAircraftData(TelemetryMessage message)
+    private AircraftData NewAircraftData(TelemetryMessage message)
     {
         AircraftData data = new AircraftData
         {

@@ -193,6 +193,21 @@ PrefabInstance:
       propertyPath: _showMapDataInEditor
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8266957978873577049, guid: 8461cd67d0c224b4e82c519f9a4db883,
+        type: 3}
+      propertyPath: _zoomLevel
+      value: 13.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266957978873577049, guid: 8461cd67d0c224b4e82c519f9a4db883,
+        type: 3}
+      propertyPath: _maximumZoomLevel
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266957978873577049, guid: 8461cd67d0c224b4e82c519f9a4db883,
+        type: 3}
+      propertyPath: _minimumZoomLevel
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8461cd67d0c224b4e82c519f9a4db883, type: 3}
 --- !u!1 &705507993
@@ -562,6 +577,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AircraftData: {fileID: 11400000, guid: 2de2e370b63df3847a4e92b35361ca31, type: 2}
   MapRenderer: {fileID: 717658185}
+  AltitudeLimit: 3000
+  MapZoomLimit: 15
+  AircraftModelMaxYPosition: 1
+  AircraftModelMinYPosition: 0.3319
 --- !u!1001 &2323330140149416848
 PrefabInstance:
   m_ObjectHideFlags: 0

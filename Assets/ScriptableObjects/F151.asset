@@ -16,9 +16,10 @@ MonoBehaviour:
     type: 3}
   aircraftData:
     <Id>k__BackingField: F151
-    <Pitch>k__BackingField: -0.14493544399738312
-    <Altitude>k__BackingField: 3132.8566106950666
-    <Heading>k__BackingField: 0.6422407735842839
-    <Longitude>k__BackingField: -1.4936393199558882
-    <Latitude>k__BackingField: 0.5255833877956343
-    <Airspeed>k__BackingField: 516.3314208984375
+    <Pitch>k__BackingField: -0.019651876762509346
+    <Altitude>k__BackingField: 2276.6786840538057
+    <Heading>k__BackingField: 2.339301580033444
+    <Longitude>k__BackingField: -1.497834392740993
+    <Latitude>k__BackingField: 0.5271242406211227
+    <Airspeed>k__BackingField: 610.3855590820312
+    <Bank>k__BackingField: -0.22271326723083382
