@@ -15,11 +15,11 @@ MonoBehaviour:
   AircraftPrefab: {fileID: 2987947930186789928, guid: e741f9307ea581d4a85f582cbe313091,
     type: 3}
   Data:
-    <Id>k__BackingField: F151
-    <Pitch>k__BackingField: 0
-    <Altitude>k__BackingField: 0
-    <Heading>k__BackingField: 0
-    <Longitude>k__BackingField: 0
-    <Latitude>k__BackingField: 0
-    <Airspeed>k__BackingField: 0
-    <Bank>k__BackingField: 0
+    _id: F151
+    _pitch: 0
+    _altitude: 0
+    _heading: 0
+    _longitude: 0
+    _latitude: 0
+    _airspeed: 0
+    _bank: 0
