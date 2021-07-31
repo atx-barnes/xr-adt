@@ -15,6 +15,9 @@ GameObject:
   - component: {fileID: 8266957978873577055}
   - component: {fileID: 8266957978873577052}
   - component: {fileID: 8266957978873577053}
+  - component: {fileID: 5309173296943511172}
+  - component: {fileID: 4198850668420211257}
+  - component: {fileID: 6617575876486561275}
   m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
@@ -30,8 +33,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8266957978873577027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -77,14 +80,14 @@ MonoBehaviour:
   _center:
     _latitude: 30.078611
     _longitude: -85.576385
-  _zoomLevel: 14.55
+  _zoomLevel: 14
   _minimumZoomLevel: 14
   _maximumZoomLevel: 18
   _mapTerrainType: 0
   _mapShape: 1
   _localMapDimension: {x: 1, y: 1}
   _localMapRadius: 1
-  _localMapBaseHeight: 0.3
+  _localMapBaseHeight: 0.07
   _elevationScale: 1
   _castShadows: 1
   _receiveShadows: 1
@@ -162,3 +165,70 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _percentUtilization: 0.3
   _maxCacheSizeInBytes: 2147483648
+--- !u!65 &5309173296943511172
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8266957978873577027}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1911645, y: 0.34096026, z: 2.0974672}
+  m_Center: {x: -0.010767758, y: 0.039133668, z: -0.005096793}
+--- !u!114 &4198850668420211257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8266957978873577027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98de877dee5fc341b4eb59dfdab266c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoConstraintSelection: 1
+  selectedConstraints: []
+--- !u!114 &6617575876486561275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8266957978873577027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hostTransform: {fileID: 8266957978873577026}
+  manipulationType: -1
+  twoHandedManipulationType: 7
+  allowFarManipulation: 1
+  useForcesForNearManipulation: 0
+  oneHandRotationModeNear: 1
+  oneHandRotationModeFar: 1
+  releaseBehavior: 3
+  smoothingFar: 1
+  smoothingNear: 1
+  moveLerpTime: 0.001
+  rotateLerpTime: 0.001
+  scaleLerpTime: 0.001
+  enableConstraints: 1
+  constraintsManager: {fileID: 4198850668420211257}
+  elasticsManager: {fileID: 0}
+  onManipulationStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onManipulationEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExited:
+    m_PersistentCalls:
+      m_Calls: []

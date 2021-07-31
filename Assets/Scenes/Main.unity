@@ -133,56 +133,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 8266957978873577026, guid: 8461cd67d0c224b4e82c519f9a4db883,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8266957978873577026, guid: 8461cd67d0c224b4e82c519f9a4db883,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8266957978873577026, guid: 8461cd67d0c224b4e82c519f9a4db883,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8266957978873577026, guid: 8461cd67d0c224b4e82c519f9a4db883,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8266957978873577026, guid: 8461cd67d0c224b4e82c519f9a4db883,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8266957978873577026, guid: 8461cd67d0c224b4e82c519f9a4db883,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8266957978873577026, guid: 8461cd67d0c224b4e82c519f9a4db883,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8266957978873577026, guid: 8461cd67d0c224b4e82c519f9a4db883,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8266957978873577026, guid: 8461cd67d0c224b4e82c519f9a4db883,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8266957978873577026, guid: 8461cd67d0c224b4e82c519f9a4db883,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8266957978873577027, guid: 8461cd67d0c224b4e82c519f9a4db883,
         type: 3}
       propertyPath: m_Name
@@ -192,11 +142,6 @@ PrefabInstance:
         type: 3}
       propertyPath: _showMapDataInEditor
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8266957978873577049, guid: 8461cd67d0c224b4e82c519f9a4db883,
-        type: 3}
-      propertyPath: _zoomLevel
-      value: 13.5
       objectReference: {fileID: 0}
     - target: {fileID: 8266957978873577049, guid: 8461cd67d0c224b4e82c519f9a4db883,
         type: 3}
@@ -575,12 +520,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 748f3571f16b25f4aa4cfe5c87cd83de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AircraftData: {fileID: 11400000, guid: 2de2e370b63df3847a4e92b35361ca31, type: 2}
+  Aircraft: {fileID: 11400000, guid: 2de2e370b63df3847a4e92b35361ca31, type: 2}
   MapRenderer: {fileID: 717658185}
   AltitudeLimit: 3000
-  MapZoomLimit: 15
+  MapZoomMinLimit: 13.5
+  MapZoomMaxMimit: 18
   AircraftModelMaxYPosition: 1
-  AircraftModelMinYPosition: 0.3319
+  AircraftModelMinYPosition: 0.1
 --- !u!1001 &2323330140149416848
 PrefabInstance:
   m_ObjectHideFlags: 0
