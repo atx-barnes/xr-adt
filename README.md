@@ -1,1 +1,1 @@
-# 5G Enabled Immersive Digital Twin
+# Immersive Digital Twin Client
