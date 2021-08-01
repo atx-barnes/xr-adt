@@ -1,0 +1,118 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 480104 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=216412, tid=0x0000000000031e4c
+#
+# JRE version:  (8.0) (build )
+# Java VM: OpenJDK 64-Bit Server VM (25.71-b00 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000000028e2800):  JavaThread "Unknown thread" [_thread_in_vm, id=204364, stack(0x00000000027e0000,0x00000000028e0000)]
+
+Stack: [0x00000000027e0000,0x00000000028e0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00000000028e2800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=204364, stack(0x00000000027e0000,0x00000000028e0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff62dbf0000 - 0x00007ff62dc25000 	C:\Program Files\Editors\2019.4.28f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\java.exe
+0x00007ff847310000 - 0x00007ff847505000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff845d10000 - 0x00007ff845dcd000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff844f20000 - 0x00007ff8451e9000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff845dd0000 - 0x00007ff845e7c000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff846540000 - 0x00007ff8465de000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff845380000 - 0x00007ff84541b000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff8455d0000 - 0x00007ff8456fa000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff845ea0000 - 0x00007ff846040000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff845350000 - 0x00007ff845372000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff847240000 - 0x00007ff84726a000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff844a50000 - 0x00007ff844b5b000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff844d80000 - 0x00007ff844e1d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff844e20000 - 0x00007ff844f20000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff8302d0000 - 0x00007ff83056a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ff845700000 - 0x00007ff845730000 	C:\WINDOWS\System32\IMM32.DLL
+0x0000000055000000 - 0x00000000550d2000 	C:\Program Files\Editors\2019.4.28f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\jre\bin\msvcr100.dll
+0x00000000547b0000 - 0x0000000054ff9000 	C:\Program Files\Editors\2019.4.28f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\jre\bin\server\jvm.dll
+0x00007ff845e80000 - 0x00007ff845e88000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ff81a0e0000 - 0x00007ff81a0e9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff8471d0000 - 0x00007ff84723b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff835960000 - 0x00007ff835987000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff83d290000 - 0x00007ff83d29a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff8255e0000 - 0x00007ff8255ef000 	C:\Program Files\Editors\2019.4.28f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\jre\bin\verify.dll
+0x00007ff823610000 - 0x00007ff823639000 	C:\Program Files\Editors\2019.4.28f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\jre\bin\java.dll
+0x00007ff81d810000 - 0x00007ff81d826000 	C:\Program Files\Editors\2019.4.28f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 
+java_command: <unknown>
+java_class_path (initial): .
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
+PATH=C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files\PlasticSCM5\client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\atxba\AppData\Local\Microsoft\WindowsApps;C:\Users\atxba\.dotnet\tools;C:\Users\atxba\AppData\Roaming\npm;C:\Users\atxba\AppData\Local\Android\Sdk\platform-tools;
+USERNAME=atxba
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 165 Stepping 2, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 19041 (10.0.19041.1023)
+
+CPU:total 12 (initial active 12) (6 cores per cpu, 2 threads per core) family 6 model 165 stepping 2, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 16533524k(521816k free), swap 45346608k(6212k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.71-b00) for windows-amd64 JRE (1.8.0-adoptopenjdk-_2018_05_19_00_59-b00), built on May 19 2018 01:02:12 by "jenkins" with MS VC++ 10.0 (VS2010)
+
+time: Sat Jul 31 17:00:33 2021
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
